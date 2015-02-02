@@ -26,7 +26,7 @@
 
 #define ST7032_EX_SETBIASOSC		0x10	// Bias selection/Internal OSC frequency adjust
 #define ST7032_EX_SETICONRAMADDR	0x40	// Set ICON RAM address
-#define ST7032_EX_POWICONCONTRASTH	0x50	// Power/ICON control/ Contrast set(high byte)
+#define ST7032_EX_POWICONCONTRASTH	0x50	// Power/ICON control/Contrast set(high byte)
 #define ST7032_EX_FOLLOWERCONTROL	0x60	// Follower control
 #define ST7032_EX_CONTRASTSETL		0x70	// Contrast set(low byte)
 
@@ -63,7 +63,7 @@
 #define ST7032_BIAS_1_4				0x08	// bias will be 1/4
 #define ST7032_BIAS_1_5				0x00	// bias will be 1/5
 
-// flags Power/ICON control/ Contrast set(high byte)
+// flags Power/ICON control/Contrast set(high byte)
 #define ST7032_ICON_ON				0x08	// ICON display on
 #define ST7032_ICON_OFF				0x00	// ICON display off
 #define ST7032_BOOST_ON				0x04	// booster circuit is turn on
