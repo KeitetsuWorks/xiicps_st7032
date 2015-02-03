@@ -13,21 +13,19 @@
 
 #include "st7032.h"
 
-/************************** Variable Definitions ******************************/
-XIicPs_Config *Config;	/**< configuration information for the device */
-XIicPs Iic;				/**< Instance of the IIC Device */
-
 /******************************************************************************/
 /*
- * 初期化関数
+ * IIC LCD (ST7032) Initialization Function
  *
- * 引数:
- * XIicPs *Iic
+ * @param
+ * XIicPs *Iic		Instance of the IIC Controller
  *
- * 復帰値:
- * int				実行結果:
- * 					XST_SUCCESS		成功
- * 					XST_FAILURE		失敗
+ * @return
+ * int				XST_SUCCESS:	Success
+ * 					XST_FAILURE:	Failure
+ *
+ * @note
+ * None
  */
 int ST7032_init(XIicPs *Iic)
 {
@@ -178,16 +176,18 @@ int ST7032_setCursor(XIicPs *Iic, u8 row, u8 col)
 
 
 /*
- * コマンド転送関数
+ * IIC LCD (ST7032) Command Execution Function
  *
- * 引数:
- * XIicPs *Iic
- * u8 command		コマンド
+ * @param
+ * XIicPs *Iic		Instance of the IIC Controller
+ * u8 command		Instruction Code of IIC LCD (ST7032)
  *
- * 復帰値:
- * int				実行結果:
- * 					XST_SUCCESS		成功
- * 					XST_FAILURE		失敗
+ * @return
+ * int				XST_SUCCESS:	Success
+ * 					XST_FAILURE:	Failure
+ *
+ * @note
+ * None
  */
 int ST7032_command(XIicPs *Iic, u8 command)
 {
@@ -219,16 +219,18 @@ int ST7032_command(XIicPs *Iic, u8 command)
 
 
 /*
- * データ転送関数
+ * IIC LCD (ST7032) Data Transfer Function
  *
- * 引数:
- * XIicPs *Iic
- * u8 value			データ
+ * @param
+ * XIicPs *Iic		Instance of the IIC Controller
+ * u8 value			Transfer Data of IIC LCD (ST7032)
  *
- * 復帰値:
- * int				実行結果:
- * 					XST_SUCCESS		成功
- * 					XST_FAILURE		失敗
+ * @return
+ * int				XST_SUCCESS:	Success
+ * 					XST_FAILURE:	Failure
+ *
+ * @note
+ * None
  */
 int ST7032_write(XIicPs *Iic, u8 value)
 {

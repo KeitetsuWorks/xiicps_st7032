@@ -15,7 +15,6 @@
 #include "st7032.h"
 
 /************************** Constant Definitions ******************************/
-
 /*
  * Master
  */
@@ -34,15 +33,17 @@ int initIicDriver(XIicPs *Iic, u16 DeviceId, u32 FsclHz);
 
 /******************************************************************************/
 /*
- * メイン関数
+ * Main Function
  *
- * 引数:
- * なし
+ * @param
+ * None
  *
- * 復帰値:
- * int				実行結果
- * 					XST_SUCCESS		成功
- * 					XST_FAILURE		失敗
+ * @return
+ * int				XST_SUCCESS:	Success
+ * 					XST_FAILURE:	Failure
+ *
+ * @note
+ * None
  */
 int main(void)
 {
@@ -79,7 +80,19 @@ int main(void)
 
 
 /*
+ * IIC Driver Initialization Function
  *
+ * @param
+ * XIicPs *Iic		Instance of the IIC Controller
+ * u16 DeviceId		Device ID of the IIC Controller
+ * u32 FsclHz		IIC Serial Clock Rate
+ *
+ * @return
+ * int				XST_SUCCESS:	Success
+ * 					XST_FAILURE:	Failure
+ *
+ * @note
+ * None
  */
 int initIicDriver(XIicPs *Iic, u16 DeviceId, u32 FsclHz)
 {

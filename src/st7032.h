@@ -89,7 +89,7 @@
 #define ST7032_RAB_3_00				0x06	// 1+(Rb/Ra)=3.00
 #define ST7032_RAB_3_75				0x07	// 1+(Rb/Ra)=3.75
 
-// プロトタイプ宣言
+// Function Prototypes
 int ST7032_init(XIicPs *Iic);
 
 int ST7032_clearDisplay(XIicPs *Iic);
