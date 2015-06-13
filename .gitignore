@@ -1,3 +1,6 @@
+# Created by https://www.gitignore.io
+
+### Windows ###
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -17,23 +20,26 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# =========================
-# Operating System Files
-# =========================
 
-# OSX
-# =========================
-
+### OSX ###
 .DS_Store
 .AppleDouble
 .LSOverride
 
+# Icon must end with two \r
+Icon
+
+
 # Thumbnails
 ._*
 
-# Files that might appear on external disk
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
 .Spotlight-V100
+.TemporaryItems
 .Trashes
+.VolumeIcon.icns
 
 # Directories potentially created on remote AFP share
 .AppleDB
@@ -42,7 +48,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# Created by https://www.gitignore.io
 
 ### Eclipse ###
 *.pydevproject
@@ -113,3 +118,6 @@ local.properties
 *.i*86
 *.x86_64
 *.hex
+
+# Debug files
+*.dSYM/
